@@ -1,0 +1,23 @@
+{
+  "name": "fmt-string",
+  "version": "1.0.2",
+  "description": "lightweight string templating with object and array",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "string format",
+    "string template",
+    "format string with array",
+    "format string with object",
+    "minimal",
+    "lightweight"
+  ],
+  "author": "Ardy Satria Hasanuddin",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.0.2"
+  }
+}
