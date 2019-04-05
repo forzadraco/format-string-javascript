@@ -42,7 +42,6 @@ strF.pformat = (str, arr) => {
     if(match){
         var i = 0;
         match.forEach(element => {
-            console.log(element);
             if(i in arr){
                 newstr = newstr.replace("{}",arr[i]);
                 i++;
