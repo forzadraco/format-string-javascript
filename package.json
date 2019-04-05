@@ -4,7 +4,8 @@
   "description": "lightweight string templating with object, object of object, array of object and also python 3 str.format equivalent",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "keywords": [
     "string format",
@@ -18,6 +19,8 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^6.0.2"
+    "codecov": "^3.3.0",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0"
   }
 }
