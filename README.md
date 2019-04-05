@@ -1,4 +1,6 @@
 # fmt-string
+![License](https://img.shields.io/badge/license-ISC-blue.svg) [![NPM version](http://img.shields.io/npm/v/fmt-string.svg)](https://npmjs.org/package/fmt-string) [![Downloads](https://img.shields.io/npm/dm/fmt-string.svg)](https://www.npmjs.com/package/fmt-string)
+
 Complete , lightweight, faster and easier way to format any string with values from an object, array , array of object etc.
 ### Install
 `npm i fmt-string`
