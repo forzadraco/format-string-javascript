@@ -29,7 +29,8 @@ str.format(text, {
 ### Whats New in v1.1.x?
 We are now support object inside object to make your life easier :)
 Just use dot "." inside the bracket "{}"
-```
+
+```javascript
 // Your data
 var data = {};
 data.programming = {};
