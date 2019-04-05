@@ -25,3 +25,21 @@ str.format(text, {
 });
 // Return: This is how to use format in JS!
 ```
+
+### Whats New in v1.1.x?
+We are now support object inside object to make your life easier :)
+Just use dot "." inside the bracket "{}"
+```
+// Your data
+var data = {};
+data.programming = {};
+data.programming.language = "NodeJS";
+
+// Your string 
+var text = "This multiple object value: {programming.language} ";
+
+// Format the String
+str.format(text, data);
+// Return: This multiple object value: Nodejs
+```
+

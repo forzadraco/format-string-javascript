@@ -13,6 +13,14 @@ strF.format = (str, obj) => {
     if(match){
         match.forEach(element => {
             let idx = element.replace("{","").replace("}","");
+            idx = idx.split('.');
+            if(idx.length > 1){
+                let index = "obj";
+                for(let i in idx){
+                    index += `[idx[${i}]]`;
+                }
+                newstr = newstr.replace(element, eval(index));
+            }
             if(idx in obj){
                 newstr = newstr.replace(element, obj[idx]);
             } 
