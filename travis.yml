@@ -1,9 +1,14 @@
+sudo: false
 language: node_js
 node_js:
+  - "10"
   - "8"
-  - "7"
   - "6"
+before_install:
+  - git fetch origin refs/heads/master:refs/heads/master
+  - if [[ "$TRAVIS_PULL_REQUEST_BRANCH" ]] ; then git checkout -b "$TRAVIS_PULL_REQUEST_BRANCH" ; fi
 before_script:
   - npm install
 after_success: npm run coverage
 cache: npm
+os: osx
