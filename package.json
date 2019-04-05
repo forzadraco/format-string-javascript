@@ -15,6 +15,10 @@
     "minimal",
     "lightweight"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/forzadraco/format-string-javascript.git"
+  },
   "author": "Ardy Satria Hasanuddin",
   "license": "ISC",
   "dependencies": {},
