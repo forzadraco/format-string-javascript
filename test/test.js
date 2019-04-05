@@ -18,3 +18,11 @@ describe('Test #2 Format String With multiple object', function() {
         });
     });
 });
+
+describe('Test #3 Format String With array', function() {  
+    describe('#format(str: string, arr :array):string', function() {
+        it('Return string: Ronaldo have 7 cars.', function() {
+            assert.equal(str.pformat("Ronaldo have {} cars and {} guns.", [7, "many"]), "Ronaldo have 7 cars and many guns.");
+        });
+    });
+});

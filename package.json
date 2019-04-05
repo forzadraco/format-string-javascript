@@ -1,7 +1,7 @@
 {
   "name": "fmt-string",
-  "version": "1.1.0",
-  "description": "lightweight string templating with object, object of object, array of object",
+  "version": "1.1.1",
+  "description": "lightweight string templating with object, object of object, array of object and also python 3 str.format equivalent",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

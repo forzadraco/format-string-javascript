@@ -1,6 +1,5 @@
 # fmt-string
-Lightweight, faster and easier way to format any string with values from an object
-
+Complete , lightweight, faster and easier way to format any string with values from an object, array , array of object etc.
 ### Install
 `npm i fmt-string`
 
@@ -31,6 +30,8 @@ We are now support object inside object to make your life easier :)
 Just use dot "." inside the bracket "{}"
 
 ```javascript
+const str = require('fmt-string');
+
 // Your data
 var data = {};
 data.programming = {};
@@ -44,3 +45,17 @@ str.format(text, data);
 // Return: This multiple object value: Nodejs
 ```
 
+#### Python 3 str.format() equivalent
+Just add another format so you can choose which one you like ;)
+It's use **pformat()** function for this purpose!
+
+```javascript
+const str = require('fmt-string');
+
+// Your string 
+var text = "Ronaldo has {} cars and {} balls.";
+
+// Format the String
+str.pformat(text, [7, "many"]);
+// Return: Ronaldo has 7 cars and many balls.
+```
